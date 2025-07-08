@@ -1,0 +1,18 @@
+import os
+
+DEBUG = os.getenv("DEBUG")
+ENVIROMENT = os.getenv("ENVIROMENT")
+
+MONGO_USER = os.getenv("MONGO_INITDB_ROOT_USERNAME")
+MONGO_PASSWORD = os.getenv("MONGO_INITDB_ROOT_PASSWORD")
+MONGO_DB = os.getenv("MONGO_INITDB_DATABASE")
+
+MONGODB_PROD_URL = os.getenv("MONGODB_URL")
+MONGODB_PROD_USER = os.getenv("MONGODB_PROD_USER")
+MONGODB_PROD_PASSWORD = os.getenv("MONGODB_PROD_PASSWORD")
+PROD_DB_NAME = os.getenv("PROD_DB_NAME")
+
+APP_URL = os.getenv("APP_URL")
+TELEGRAM_API_WEBHOOK_URL = f"{APP_URL}/api/v1/webhook"
+
+MONGODB_DEV_URL = "mongodb://dev:1010@mongo:27017/db?authSource=admin"

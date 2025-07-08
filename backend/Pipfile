@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = { extras = ["all"], version = "*" }
+aiogram = "*"
+httpx = "*"
+motor = "*"
+sqlalchemy = "*"
+passlib = "*"
+loguru = "*"
+python-multipart = "*"
+apscheduler = "*"
+qrcode = "*"
+pillow = "*"
+radis-retailcrm-api = {ref = "0.0.144", git = "https://IllusionOfControl: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@github.com/radisbyio/api-client-python"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
